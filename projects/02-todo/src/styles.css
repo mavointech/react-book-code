@@ -1,0 +1,35 @@
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f4f6fb;
+  color: #1f2430;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 16px;
+  font-size: 1rem;
+  background: #3d5afe;
+  color: white;
+}
+
+button:disabled { opacity: 0.5; cursor: not-allowed; }
+input { padding: 10px; font-size: 1rem; border: 1px solid #c8cfe0; border-radius: 8px; }
+
+.app { max-width: 520px; margin: 40px auto; padding: 0 16px; }
+.add { display: flex; gap: 8px; }
+.add input { flex: 1; }
+.filters { display: flex; gap: 8px; margin: 16px 0; }
+.filters button { background: #e3e7f5; color: #1f2430; }
+.filters button.active { background: #3d5afe; color: white; }
+ul { list-style: none; padding: 0; margin: 0; }
+li { display: flex; align-items: center; gap: 10px; background: white;
+     padding: 10px 12px; border-radius: 8px; margin-bottom: 8px; }
+li.done span { text-decoration: line-through; color: #8a91a5; }
+li span { flex: 1; }
+li button { background: #e53935; padding: 6px 10px; }
+.summary { color: #6b7385; }

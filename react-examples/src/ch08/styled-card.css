@@ -1,0 +1,27 @@
+/* CSS variables: define a value once, use it everywhere */
+:root {
+  --brand: #3d5afe;
+  --radius: 12px;
+}
+
+.product {
+  background: #fff;
+  border: 1px solid #dde2ef;
+  border-radius: var(--radius);
+  padding: 16px;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.product:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  transform: translateY(-3px);
+}
+
+.product--highlight {
+  border-color: var(--brand);
+  background: #f3f6ff;
+}
+
+.product__title { margin: 0 0 4px; color: var(--brand); }
+.product__text { margin: 0 0 12px; color: #4a5164; }
+.product__button:hover { filter: brightness(1.1); }

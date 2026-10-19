@@ -1,0 +1,21 @@
+/* The most useful grid line you will ever write:
+   "make as many columns as fit, each at least 160px wide" */
+.product-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 16px;
+}
+
+.product-grid__item {
+  padding: 32px 12px;
+  text-align: center;
+  font-weight: 600;
+  background: #ede7f6;
+  border-radius: 10px;
+}
+
+/* Responsive design: change the layout on small screens */
+@media (max-width: 600px) {
+  .product-grid { gap: 8px; }
+  .product-grid__item { padding: 20px 8px; }
+}
